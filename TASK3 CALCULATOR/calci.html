@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images.png">
+</head>
+<body>
+    <h1>Level 1: Task 3 - CALCULATOR</h1>
+    <div class="form">
+        <form name="cal">
+            <input type="text" name="result">
+            <p>MyCalci</p>
+            <input type="button" value="AC" class="ac" onclick="cal.result.value = ''">
+            <input type="button" value="DEL" class="ac" onclick="cal.result.value = cal.result.value.slice(0,-1)">
+            <input type="button" value="%" class="ac" onclick="cal.result.value += '%'">
+            <input type="button" value="÷" class="a" onclick="cal.result.value += '/'">
+            <input type="button" value="7" class="v" onclick="cal.result.value += '7'">
+            <input type="button" value="8" class="v" onclick="cal.result.value += '8'">
+            <input type="button" value="9" class="v" onclick="cal.result.value += '9'">
+            <input type="button" value="x" class="a" onclick="cal.result.value += '*'">
+            <input type="button" value="4" class="v" onclick="cal.result.value += '4'">
+            <input type="button" value="5" class="v" onclick="cal.result.value += '5'">
+            <input type="button" value="6" class="v" onclick="cal.result.value += '6'">
+            <input type="button" value="-" class="a" onclick="cal.result.value += '-'">
+            <input type="button" value="1" class="v" onclick="cal.result.value += '1'">
+            <input type="button" value="2" class="v" onclick="cal.result.value += '2'">
+            <input type="button" value="3" class="v" onclick="cal.result.value += '3'">
+            <input type="button" value="+" class="a" onclick="cal.result.value += '+'">
+            <input type="button" value="0" class="as" onclick="cal.result.value += '0'">
+            <input type="button" value="." class="v" onclick="cal.result.value += '.'">
+            <input type="button" value="=" class="a" onclick="cal.result.value = eval(cal.result.value)">
+        </form>
+    </div>
+</body>
+</html>
